@@ -1,0 +1,172 @@
+[
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "AddTabelaGeral",
+    "RelativePath": "api/TabelaGeral/AddTabelaGeral",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Outsider.DTO.TabelaGeralDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "AddTabelaGeralItem",
+    "RelativePath": "api/TabelaGeral/AddTabelaGeralItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Outsider.DTO.TabelaGeralItemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "DeleteTabelaGeral",
+    "RelativePath": "api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabelaGeralId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "DeleteTabelaGeralItem",
+    "RelativePath": "api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabelaGeralItemId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "GetTabelaGeralById",
+    "RelativePath": "api/TabelaGeral/GetTabelaGeralById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "GetTabelaGeralByNome",
+    "RelativePath": "api/TabelaGeral/GetTabelaGeralByNome/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "GetTabelaGeralItemById",
+    "RelativePath": "api/TabelaGeral/GetTabelaGeralItemById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "GetTabelasGeraisItems",
+    "RelativePath": "api/TabelaGeral/GetTabelasGeraisItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabelaGeralId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "UpdateTabelaGeral",
+    "RelativePath": "api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabelaGeralId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Outsider.DTO.TabelaGeralDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.TabelaGeralAPI.Controllers.TabelaGeralController",
+    "Method": "UpdateTabelaGeralItem",
+    "RelativePath": "api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tabelaGeralItemId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Outsider.DTO.TabelaGeralItemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

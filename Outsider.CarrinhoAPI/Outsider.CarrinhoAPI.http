@@ -1,0 +1,6 @@
+@Outsider.CarrinhoAPI_HostAddress = http://localhost:5149
+
+GET {{Outsider.CarrinhoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

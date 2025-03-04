@@ -1,0 +1,12 @@
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\bin\Debug\net8.0\Outsider.Pagamentos.deps.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\bin\Debug\net8.0\Outsider.Pagamentos.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\bin\Debug\net8.0\Outsider.Pagamentos.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.AssemblyInfoInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.AssemblyInfo.cs
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\refint\Outsider.Pagamentos.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\ref\Outsider.Pagamentos.dll

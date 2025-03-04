@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "FPBC5Po1KI8YTexDZUt4+/Z4IgzE6E2EkUvn3G4n4pU=",
+  "Source": "Outsider.APIGateway",
+  "BasePath": "_content/Outsider.APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

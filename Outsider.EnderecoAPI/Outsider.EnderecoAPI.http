@@ -1,0 +1,6 @@
+@Outsider.EnderecoAPI_HostAddress = http://localhost:5111
+
+GET {{Outsider.EnderecoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

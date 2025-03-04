@@ -1,0 +1,51 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Outsider.IdentityServer\\Outsider.IdentityServer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.PedidoAPI\\Outsider.PedidoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.APIGateway\\Outsider.APIGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.Email\\Outsider.Email.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outside.ProdutoAPI\\Outsider.ProdutoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.AvaliacaoAPI\\Outsider.AvaliacaoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.TabelaGeralAPI\\Outsider.TabelaGeralAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.EnderecoAPI\\Outsider.EnderecoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.CarrinhoAPI\\Outsider.CarrinhoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.CupomAPI\\Outsider.CupomAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\bin\Debug\net8.0\Outsider.DataNoSQL.deps.json
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\bin\Debug\net8.0\Outsider.DataNoSQL.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\bin\Debug\net8.0\Outsider.DataNoSQL.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.AssemblyInfoInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.AssemblyInfo.cs
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\refint\Outsider.DataNoSQL.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\ref\Outsider.DataNoSQL.dll

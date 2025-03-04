@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "Outsider.EnderecoAPI.Controllers.EnderecoController",
+    "Method": "Create",
+    "RelativePath": "api/Endereco",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Outsider.DTO.EnderecoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.EnderecoAPI.Controllers.EnderecoController",
+    "Method": "Update",
+    "RelativePath": "api/Endereco/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Outsider.DTO.EnderecoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.EnderecoAPI.Controllers.EnderecoController",
+    "Method": "Delete",
+    "RelativePath": "api/Endereco/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.EnderecoAPI.Controllers.EnderecoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Endereco/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.EnderecoAPI.Controllers.EnderecoController",
+    "Method": "GetById",
+    "RelativePath": "api/Endereco/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

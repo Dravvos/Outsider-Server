@@ -1,0 +1,206 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Outsider.AvaliacaoAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Avaliacao/GetByProduto/{produtoId}": {
+      "get": {
+        "tags": [
+          "Avaliacao"
+        ],
+        "parameters": [
+          {
+            "name": "produtoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Avaliacao/GetByUsuario/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Avaliacao"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Avaliacao": {
+      "post": {
+        "tags": [
+          "Avaliacao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Avaliacao/{id}": {
+      "put": {
+        "tags": [
+          "Avaliacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AvaliacaoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Avaliacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AvaliacaoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataAlteracao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "produtoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estrelas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataAvaliacao": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Digite 'Bearer' [espaço] e seu token",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

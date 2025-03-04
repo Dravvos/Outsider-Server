@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Outsider.PedidoAPI.Controllers.PedidoController",
+    "Method": "GetPedidosByUser",
+    "RelativePath": "api/Pedido/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

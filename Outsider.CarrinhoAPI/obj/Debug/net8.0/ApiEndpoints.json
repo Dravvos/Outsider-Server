@@ -1,0 +1,135 @@
+[
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "AdicionarAoCarrinho",
+    "RelativePath": "api/Carrinho",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "Outsider.CarrinhoAPI.Model.CarrinhoItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "AtualizarCarrinho",
+    "RelativePath": "api/Carrinho",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "Outsider.CarrinhoAPI.Model.CarrinhoItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "RemoverDoCarrinho",
+    "RelativePath": "api/Carrinho/{itemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "AplicarCupom",
+    "RelativePath": "api/Carrinho/AplicarCupom/{usuarioId}/{cupom}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "cupom",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "Checkout",
+    "RelativePath": "api/Carrinho/Checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Outsider.CarrinhoAPI.Mensagens.CheckoutHeaderMessage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "GetByUser",
+    "RelativePath": "api/Carrinho/GetByUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "LimparCarrinho",
+    "RelativePath": "api/Carrinho/LimparCarrinho/{usuarioId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.CarrinhoAPI.Controllers.CarrinhoController",
+    "Method": "RemoverCupom",
+    "RelativePath": "api/Carrinho/RemoverCupom/{usuarioId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

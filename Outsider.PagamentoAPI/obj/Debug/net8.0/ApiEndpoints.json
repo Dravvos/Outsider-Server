@@ -1,0 +1,39 @@
+[
+  {
+    "ContainingType": "Outsider.PagamentoAPI.Controllers.PagamentoController",
+    "Method": "GetStatusPagamento",
+    "RelativePath": "api/Pagamento/{carrinhoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carrinhoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Outsider.PagamentoAPI.Controllers.PagamentoController",
+    "Method": "Process",
+    "RelativePath": "api/Pagamento/{carrinhoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carrinhoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Valor",
+        "Type": "System.Single",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

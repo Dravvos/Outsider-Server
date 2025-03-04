@@ -1,0 +1,530 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Outsider.CarrinhoAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Carrinho/GetByUser/{userId}": {
+      "get": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho": {
+      "post": {
+        "tags": [
+          "Carrinho"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarrinhoItem"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarrinhoItem"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarrinhoItem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Carrinho"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarrinhoItem"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarrinhoItem"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarrinhoItem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/{itemId}": {
+      "delete": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/LimparCarrinho/{usuarioId}": {
+      "delete": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/AplicarCupom/{usuarioId}/{cupom}": {
+      "post": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "cupom",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/RemoverCupom/{usuarioId}": {
+      "delete": {
+        "tags": [
+          "Carrinho"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Carrinho/Checkout": {
+      "post": {
+        "tags": [
+          "Carrinho"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutHeaderMessage"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutHeaderMessage"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutHeaderMessage"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CarrinhoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataAlteracao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "codigoCupom": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CarrinhoItem": {
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "produtoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CheckoutHeaderMessage": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "messageCreated": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "enderecoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "codigoCupom": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "sobrenome": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorCompra": {
+            "type": "number",
+            "format": "float"
+          },
+          "valorDesconto": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantidadeItens": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "itensCarrinho": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemCarrinhoDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemCarrinhoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataAlteracao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "carrinhoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "produtoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "carrinho": {
+            "$ref": "#/components/schemas/CarrinhoDTO"
+          },
+          "produto": {
+            "$ref": "#/components/schemas/ProdutoDTO"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataAlteracao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "float"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTGCategoria": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "imagem": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "nomeArquivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagemBase64": {
+            "type": "string",
+            "nullable": true
+          },
+          "peso": {
+            "type": "number",
+            "format": "float"
+          },
+          "estoque": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sku": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTGCor": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cor": {
+            "$ref": "#/components/schemas/TabelaGeralItemDTO"
+          },
+          "categoria": {
+            "$ref": "#/components/schemas/TabelaGeralItemDTO"
+          },
+          "idTGTamanho": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "tamanho": {
+            "$ref": "#/components/schemas/TabelaGeralItemDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TabelaGeralDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataAlteracao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TabelaGeralItemDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataAlteracao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tabelaGeralId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "sigla": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "tabelaGeral": {
+            "$ref": "#/components/schemas/TabelaGeralDTO"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Digite 'Bearer' [espaço] e seu token",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

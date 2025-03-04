@@ -1,0 +1,6 @@
+@Outsider.PedidoAPI_HostAddress = http://localhost:5045
+
+GET {{Outsider.PedidoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

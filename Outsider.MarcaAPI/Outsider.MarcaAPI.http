@@ -1,0 +1,6 @@
+@Outsider.MarcaAPI_HostAddress = http://localhost:5150
+
+GET {{Outsider.MarcaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
