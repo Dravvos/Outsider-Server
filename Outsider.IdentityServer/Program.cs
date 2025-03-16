@@ -4,6 +4,7 @@ using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.EntityFrameworkCore;
+using Outsider.IdentityServer;
 using Outsider.IdentityServer.Configuration;
 using Outsider.IdentityServer.Initializer;
 using Outsider.IdentityServer.Model;
@@ -76,6 +77,9 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseMiddleware<CustomMiddleware>();
+
 using var scope = app.Services.CreateScope();
 var initializer = scope.ServiceProvider.GetService<IDbInitializer>();
 
