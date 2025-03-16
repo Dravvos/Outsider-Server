@@ -71,7 +71,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider/Outsider.AvalaiacaoAPI/publish'
+        source: './Outsider/Outsider.AvaliacaoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Avaliacao'
         port: 22
    
