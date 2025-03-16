@@ -1,0 +1,12 @@
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\bin\Release\net8.0\Outsider.MessageBus.deps.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\bin\Release\net8.0\Outsider.MessageBus.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\bin\Release\net8.0\Outsider.MessageBus.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.AssemblyInfoInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.AssemblyInfo.cs
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\refint\Outsider.MessageBus.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\Outsider.MessageBus.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Release\net8.0\ref\Outsider.MessageBus.dll

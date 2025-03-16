@@ -1,0 +1,12 @@
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\bin\Release\net8.0\Outsider.DTO.deps.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\bin\Release\net8.0\Outsider.DTO.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\bin\Release\net8.0\Outsider.DTO.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.AssemblyInfoInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.AssemblyInfo.cs
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\refint\Outsider.DTO.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\Outsider.DTO.pdb
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Release\net8.0\ref\Outsider.DTO.dll

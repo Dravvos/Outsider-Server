@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Outsider.PedidoAPI.props" />
+</Project>

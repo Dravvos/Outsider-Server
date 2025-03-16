@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Outsider.CategoriaAPI.props" />
-</Project>
