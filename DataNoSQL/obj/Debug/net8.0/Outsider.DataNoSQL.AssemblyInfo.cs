@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Outsider.DataNoSQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+610f192f7783e76b47f7037c9497d28de360867b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6731604d998d27de0cb360fd38abb0530837176c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Outsider.DataNoSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Outsider.DataNoSQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

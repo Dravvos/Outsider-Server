@@ -1,6 +1,0 @@
-@Outsider_HostAddress = http://localhost:5017
-
-GET {{Outsider_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
