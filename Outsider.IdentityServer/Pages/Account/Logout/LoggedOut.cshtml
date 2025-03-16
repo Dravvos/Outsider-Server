@@ -25,6 +25,6 @@
 {
     @if (Model.View.AutomaticRedirectAfterSignOut)
     {
-        <script src="~/js/signout-redirect.js"></script>
+        <script src="@Url.Content("~/js/signout-redirect.js")"></script>
     }
 }
