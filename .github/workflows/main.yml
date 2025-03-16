@@ -121,7 +121,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: '/Outsider./Outsider.PedidoAPI/publish'
+        source: './Outsider/Outsider.PedidoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Pedido'
         port: 22
 
