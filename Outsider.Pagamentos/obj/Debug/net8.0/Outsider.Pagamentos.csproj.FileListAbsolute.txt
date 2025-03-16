@@ -10,3 +10,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\n
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\refint\Outsider.Pagamentos.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\ref\Outsider.Pagamentos.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Pagamentos\obj\Debug\net8.0\Outsider.Pagamentos.sourcelink.json

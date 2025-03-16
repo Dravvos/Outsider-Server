@@ -169,3 +169,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.EnderecoAPI\obj\Debug\
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.EnderecoAPI\obj\Debug\net8.0\Outsider.EnderecoAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.EnderecoAPI\obj\Debug\net8.0\Outsider.EnderecoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.EnderecoAPI\obj\Debug\net8.0\ref\Outsider.EnderecoAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.EnderecoAPI\obj\Debug\net8.0\Outsider.EnderecoAPI.sourcelink.json

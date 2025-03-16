@@ -50,24 +50,32 @@ builder.Services.AddHostedService<RabbitMQTabelaGeralConsumer>();
 
 builder.Services.AddControllers();
 
-builder.Services.AddCors(options =>
+if (builder.Environment.IsDevelopment())
 {
-    options.AddPolicy("AllowVueApp", builder =>
-    {
-        builder.WithOrigins("http://localhost:5173")
-               .AllowAnyHeader()
-               .AllowAnyMethod();
-    });
-});
-builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
-{
-    options.Authority = "https://localhost:44332";
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateAudience = false,
-    };
-});
 
+    builder.Services.AddAuthentication()
+        .AddJwtBearer("Bearer", options =>
+        {
+            options.Authority = "https://localhost:44332";
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateAudience = false,
+            };
+        });
+}
+else
+{
+    builder.Services.AddAuthentication()
+        .AddJwtBearer("Bearer", options =>
+        {
+            options.Authority = "https://www.danieloliveira.net.br/Outsider.IdentityServer";
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateAudience = false,
+            };
+        });
+
+}
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("ApiScope", policy =>

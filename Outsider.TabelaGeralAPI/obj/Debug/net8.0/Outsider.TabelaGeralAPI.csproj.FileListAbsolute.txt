@@ -152,3 +152,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.TabelaGeralAPI\obj\Deb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.TabelaGeralAPI\obj\Debug\net8.0\Outsider.TabelaGeralAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.TabelaGeralAPI\obj\Debug\net8.0\Outsider.TabelaGeralAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.TabelaGeralAPI\obj\Debug\net8.0\ref\Outsider.TabelaGeralAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.TabelaGeralAPI\obj\Debug\net8.0\Outsider.TabelaGeralAPI.sourcelink.json

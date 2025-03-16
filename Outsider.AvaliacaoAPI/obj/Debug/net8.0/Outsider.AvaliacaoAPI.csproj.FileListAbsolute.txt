@@ -168,3 +168,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.AvaliacaoAPI\obj\Debug
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.AvaliacaoAPI\obj\Debug\net8.0\Outsider.AvaliacaoAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.AvaliacaoAPI\obj\Debug\net8.0\Outsider.AvaliacaoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.AvaliacaoAPI\obj\Debug\net8.0\ref\Outsider.AvaliacaoAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.AvaliacaoAPI\obj\Debug\net8.0\Outsider.AvaliacaoAPI.sourcelink.json

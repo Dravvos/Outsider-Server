@@ -49,3 +49,5 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.APIGateway\obj\Debug\n
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.APIGateway\obj\Debug\net8.0\Outsider.APIGateway.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.APIGateway\obj\Debug\net8.0\ref\Outsider.APIGateway.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.APIGateway\obj\Debug\net8.0\Outsider.APIGateway.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.APIGateway\bin\Debug\net8.0\ocelotProd.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.APIGateway\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

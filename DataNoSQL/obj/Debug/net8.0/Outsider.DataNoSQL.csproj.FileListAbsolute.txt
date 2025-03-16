@@ -10,3 +10,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outs
 D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\refint\Outsider.DataNoSQL.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\ref\Outsider.DataNoSQL.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\DataNoSQL\obj\Debug\net8.0\Outsider.DataNoSQL.sourcelink.json

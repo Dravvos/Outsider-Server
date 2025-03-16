@@ -135,3 +135,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.IdentityServer\obj\Deb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.IdentityServer\obj\Debug\net8.0\Outsider.IdentityServer.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.IdentityServer\obj\Debug\net8.0\Outsider.IdentityServer.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.IdentityServer\obj\Debug\net8.0\ref\Outsider.IdentityServer.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.IdentityServer\obj\Debug\net8.0\Outsider.IdentityServer.sourcelink.json

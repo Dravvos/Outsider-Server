@@ -152,3 +152,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\ne
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.PedidoAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.PedidoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\ref\Outsider.PedidoAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.PedidoAPI.sourcelink.json

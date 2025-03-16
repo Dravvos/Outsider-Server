@@ -22,16 +22,6 @@ builder.Services.AddDbContext<PostgreContext>(options =>
     options.UseNpgsql(connection);
 });
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowVueApp", builder =>
-    {
-        builder.WithOrigins("http://localhost:5173")
-               .AllowAnyHeader()
-               .AllowAnyMethod();
-    });
-});
-
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<PostgreContext>()
     .AddDefaultTokenProviders();
@@ -50,15 +40,28 @@ builder.Services.AddIdentityServer(options =>
 .AddAspNetIdentity<ApplicationUser>()
 .AddDeveloperSigningCredential();
 
+if (builder.Environment.IsDevelopment())
+{
 
-builder.Services.AddAuthentication()
-    .AddJwtBearer("Bearer", options =>
-    {
-        options.Authority = "https://localhost:44332";
-        options.Audience = "Outsider";
-    });
+    builder.Services.AddAuthentication()
+        .AddJwtBearer("Bearer", options =>
+        {
+            options.Authority = "https://localhost:44332";
+            options.Audience = "Outsider";
+        });
+}
+else
+{
+    builder.Services.AddAuthentication()
+        .AddJwtBearer("Bearer", options =>
+        {
+            options.Authority = "https://www.danieloliveira.net.br/Outsider.IdentityServer";
+            options.Audience = "Outsider";
+        });
+
+    
+}
 builder.Services.AddAuthorization();
-
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 

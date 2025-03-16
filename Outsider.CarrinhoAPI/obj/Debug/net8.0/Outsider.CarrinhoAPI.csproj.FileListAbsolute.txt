@@ -156,3 +156,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.CarrinhoAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.CarrinhoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\ref\Outsider.CarrinhoAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.CarrinhoAPI.sourcelink.json

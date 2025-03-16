@@ -152,3 +152,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.Email.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.Email.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\ref\Outsider.Email.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.Email.sourcelink.json

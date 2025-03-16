@@ -9,3 +9,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Debug\net8.0\O
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Debug\net8.0\refint\Outsider.DTO.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Debug\net8.0\Outsider.DTO.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Debug\net8.0\ref\Outsider.DTO.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.DTO\obj\Debug\net8.0\Outsider.DTO.sourcelink.json

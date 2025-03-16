@@ -9,3 +9,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Debug\n
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Debug\net8.0\refint\Outsider.MessageBus.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Debug\net8.0\Outsider.MessageBus.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Debug\net8.0\ref\Outsider.MessageBus.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.MessageBus\obj\Debug\net8.0\Outsider.MessageBus.sourcelink.json

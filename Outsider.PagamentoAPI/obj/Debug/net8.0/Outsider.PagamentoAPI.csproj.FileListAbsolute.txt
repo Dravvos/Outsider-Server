@@ -147,3 +147,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.PagamentoAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.PagamentoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\ref\Outsider.PagamentoAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.PagamentoAPI.sourcelink.json

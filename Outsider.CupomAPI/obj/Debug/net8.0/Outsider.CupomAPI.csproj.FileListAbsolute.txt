@@ -149,3 +149,4 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CupomAPI\obj\Debug\net
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CupomAPI\obj\Debug\net8.0\Outsider.CupomAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CupomAPI\obj\Debug\net8.0\Outsider.CupomAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CupomAPI\obj\Debug\net8.0\ref\Outsider.CupomAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CupomAPI\obj\Debug\net8.0\Outsider.CupomAPI.sourcelink.json
