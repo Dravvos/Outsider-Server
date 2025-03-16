@@ -23,37 +23,37 @@ jobs:
       run: dotnet build ./Outsider.sln -c Release --no-restore
     
     - name: Publish API Gateway
-      run: dotnet publish ./Outsider.APIGateway/Outsider.APIGateway.csproj -c Release --no-build -o ./Outsider.APIGateway/publish
+      run: dotnet publish ./Outsider.APIGateway/Outsider.APIGateway.csproj -c Release --no-build -o ./Outsider/Outsider.APIGateway/publish
     
     - name: Publish Avaliação API
-      run: dotnet publish ./Outsider.AvaliacaoAPI/Outsider.AvaliacaoAPI.csproj -c Release --no-build -o ./Outsider.AvaliacaoAPI/publish
+      run: dotnet publish ./Outsider.AvaliacaoAPI/Outsider.AvaliacaoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.AvaliacaoAPI/publish
 
     - name: Publish Carrinho API
-      run: dotnet publish ./Outsider.CarrinhoAPI/Outsider.CarrinhoAPI.csproj -c Release --no-build -o ./Outsider.CarrinhoAPI/publish
+      run: dotnet publish ./Outsider.CarrinhoAPI/Outsider.CarrinhoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.CarrinhoAPI/publish
     
     - name: Publish Cupom API
-      run: dotnet publish ./Outsider.CupomAPI/Outsider.CupomAPI.csproj -c Release --no-build -o ./Outsider.CupomAPI/publish
+      run: dotnet publish ./Outsider.CupomAPI/Outsider.CupomAPI.csproj -c Release --no-build -o ./Outsider/Outsider.CupomAPI/publish
       
     - name: Publish Endereço API
-      run: dotnet publish ./Outsider.EnderecoAPI/Outsider.EnderecoAPI.csproj -c Release --no-build -o ./Outsider.EnderecoAPI/publish
+      run: dotnet publish ./Outsider.EnderecoAPI/Outsider.EnderecoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.EnderecoAPI/publish
     
     - name: Publish Pagamento API
-      run: dotnet publish ./Outsider.PagamentoAPI/Outsider.PagamentoAPI.csproj -c Release --no-build -o ./Outsider.PagamentoAPI/publish
+      run: dotnet publish ./Outsider.PagamentoAPI/Outsider.PagamentoAPI.csproj -c Release --no-build -o ./Outsider/Outsider/Outsider.PagamentoAPI/publish
       
     - name: Publish Pedido API
-      run: dotnet publish ./Outsider.PedidoAPI/Outsider.PedidoAPI.csproj -c Release --no-build -o ./Outsider.PedidoAPI/publish
+      run: dotnet publish ./Outsider.PedidoAPI/Outsider.PedidoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.PedidoAPI/publish
       
     - name: Publish Produto API
-      run: dotnet publish ./Outsider.ProdutoAPI/Outsider.ProdutoAPI.csproj -c Release --no-build -o ./Outsider.ProdutoAPI/publish
+      run: dotnet publish ./Outsider.ProdutoAPI/Outsider.ProdutoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.ProdutoAPI/publish
       
     - name: Publish Tabela Geral API
-      run: dotnet publish ./Outsider.TabelaGeralAPI/Outsider.TabelaGeralAPI.csproj -c Release --no-build -o ./Outsider.TabelaGeralAPI/publish
+      run: dotnet publish ./Outsider.TabelaGeralAPI/Outsider.TabelaGeralAPI.csproj -c Release --no-build -o ./Outsider/Outsider.TabelaGeralAPI/publish
     
     - name: Publish Identity Server
-      run: dotnet publish ./Outsider.IdentityServer/Outsider.IdentityServer.csproj -c Release --no-build -o ./Outsider.IdentityServer/publish
+      run: dotnet publish ./Outsider.IdentityServer/Outsider.IdentityServer.csproj -c Release --no-build -o ./Outsider/Outsider.IdentityServer/publish
     
     - name: Create tarball
-      run: tar --no-same-permissions -cvf publish.tar ./publish
+      run: tar --no-same-permissions -cvf publish.tar ./Outsider
 
     - name: Deploy to Outsider API Gateway
       uses: appleboy/scp-action@master
@@ -61,7 +61,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.APIGateway/publish'
+        source: './Outsider/Outsider.APIGateway/publish'
         target: '/var/www/html/Outsider/Outsider.APIGateway'
         port: 22
 
@@ -71,7 +71,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.AvalaiacaoAPI/publish'
+        source: './Outsider/Outsider.AvalaiacaoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Avaliacao'
         port: 22
    
@@ -81,7 +81,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.CarrinhoAPI/publish'
+        source: './Outsider/Outsider.CarrinhoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Carrinho'
         port: 22
 
@@ -91,7 +91,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.CupomAPI/publish'
+        source: './Outsider/Outsider.CupomAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Cupom'
         port: 22
 
@@ -101,7 +101,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.EnderecoAPI/publish'
+        source: './Outsider/Outsider.EnderecoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Endereco'
         port: 22
    
@@ -111,7 +111,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.PagamentoAPI/publish'
+        source: './Outsider/Outsider.PagamentoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Pagamento'
         port: 22
         
@@ -121,7 +121,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.PedidoAPI/publish'
+        source: '/Outsider./Outsider.PedidoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Pedido'
         port: 22
 
@@ -131,7 +131,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.ProdutoAPI/publish'
+        source: './Outsider/Outsider.ProdutoAPI/publish'
         target: '/var/www/html/Outsider/Outsider.Produto'
         port: 22
    
@@ -141,7 +141,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.TabelaGeralAPI/publish'
+        source: './Outsider/Outsider.TabelaGeralAPI/publish'
         target: '/var/www/html/Outsider/Outsider.TabelaGeralAPI'
         port: 22
 
@@ -151,7 +151,7 @@ jobs:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './Outsider.IdentityServer/publish'
+        source: './Outsider/Outsider.IdentityServer/publish'
         target: '/var/www/html/Outsider/Outsider.IdentityServer'
         port: 22
         
