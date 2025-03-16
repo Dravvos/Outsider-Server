@@ -38,7 +38,7 @@ jobs:
       run: dotnet publish ./Outsider.EnderecoAPI/Outsider.EnderecoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.EnderecoAPI/publish
     
     - name: Publish Pagamento API
-      run: dotnet publish ./Outsider.PagamentoAPI/Outsider.PagamentoAPI.csproj -c Release --no-build -o ./Outsider/Outsider/Outsider.PagamentoAPI/publish
+      run: dotnet publish ./Outsider.PagamentoAPI/Outsider.PagamentoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.PagamentoAPI/publish
       
     - name: Publish Pedido API
       run: dotnet publish ./Outsider.PedidoAPI/Outsider.PedidoAPI.csproj -c Release --no-build -o ./Outsider/Outsider.PedidoAPI/publish
