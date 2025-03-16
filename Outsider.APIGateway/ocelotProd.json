@@ -1,13 +1,13 @@
 {
   "Routes": [
-    //"ProductAPI": "https://localhost:44317",
+    //"ProductAPI": "http://localhost:5012",
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44317
+          "Port": 5012
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
@@ -15,11 +15,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44317
+          "Port": 5012
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/GetAll",
@@ -31,11 +31,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44317
+          "Port": 5012
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
@@ -47,11 +47,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44317
+          "Port": 5012
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
@@ -63,11 +63,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44317
+          "Port": 5012
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
@@ -79,11 +79,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/produto/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44317
+          "Port": 5012
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/produto/{id}",
@@ -94,14 +94,14 @@
       }
     },
 
-    //"CartAPI": "https://localhost:44303",
+    //"CartAPI": "http://localhost:5006",
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/GetByUser/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/GetByUser/{id}",
@@ -113,11 +113,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
@@ -129,11 +129,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
@@ -145,11 +145,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/{id}",
@@ -161,11 +161,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
@@ -177,11 +177,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/removeCupom/{ususarioId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/removeCupom/{ususarioId}",
@@ -193,11 +193,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/Checkout",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44303
+          "Port": 5006
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/Checkout",
@@ -208,14 +208,14 @@
       }
     },
 
-    //"CouponAPI": "https://localhost:44393"
+    //"CouponAPI": "http://localhost:5007"
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/Cupom",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44393
+          "Port": 5007
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/Cupom",
@@ -227,11 +227,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44393
+          "Port": 5007
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
@@ -243,11 +243,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44393
+          "Port": 5007
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom",
@@ -259,11 +259,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44393
+          "Port": 5007
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
@@ -275,11 +275,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44393
+          "Port": 5007
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
@@ -289,14 +289,14 @@
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"TabelaGeralAPI": "https://localhost:44355",
+    //"TabelaGeralAPI": "http://localhost:5013",
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
@@ -304,11 +304,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
@@ -320,11 +320,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeral",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeral",
@@ -336,11 +336,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
@@ -352,11 +352,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
@@ -368,11 +368,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralItemById/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralItemById/{id}",
@@ -380,11 +380,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
@@ -396,11 +396,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeralItem",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeralItem",
@@ -412,11 +412,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
@@ -428,11 +428,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44355
+          "Port": 5013
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
@@ -442,14 +442,14 @@
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"EndereçoAPI": "https://localhost:44376",
+    //"EndereçoAPI": "http://localhost:5008",
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{usuarioId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44376
+          "Port": 5008
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{usuarioId}",
@@ -461,11 +461,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/GetById/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44376
+          "Port": 5008
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/GetById/{id}",
@@ -477,11 +477,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44376
+          "Port": 5008
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/",
@@ -493,11 +493,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44376
+          "Port": 5008
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
@@ -509,11 +509,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44376
+          "Port": 5008
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
@@ -523,14 +523,14 @@
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"PagamentoAPI": "https://localhost:44338",
+    //"PagamentoAPI": "http://localhost:5009",
     {
       "DownstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44338
+          "Port": 5009
         }
       ],
       "UpstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
@@ -542,11 +542,11 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44338
+          "Port": 5009
         }
       ],
       "UpstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
@@ -556,14 +556,14 @@
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"PedidoAPI": "https://localhost:44359",
+    //"PedidoAPI": "http://localhost:5011",
     {
       "DownstreamPathTemplate": "/Outsider.PedidoAPI/api/Pedido/{usuarioId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44359
+          "Port": 5011
         }
       ],
       "UpstreamPathTemplate": "/Outsider.PedidoAPI/api/Pedido/{usuarioId}",
@@ -575,6 +575,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:45999"
+    "BaseUrl": "http://localhost:45999"
   }
 }
