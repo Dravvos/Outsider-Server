@@ -1,0 +1,176 @@
+name: Deploy to Outsider
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.x.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore ./Outsider.sln
+    
+    - name: Build
+      run: dotnet build ./Outsider.sln -c Release --no-restore
+    
+    - name: Publish API Gateway
+      run: dotnet publish ./Outsider.APIGateway/Outsider.APIGateway.csproj -c Release --no-build -o ./Outsider.APIGateway/publish
+    
+    - name: Publish Avaliação API
+      run: dotnet publish ./Outsider.AvaliacaoAPI/Outsider.AvaliacaoAPI.csproj -c Release --no-build -o ./Outsider.AvaliacaoAPI/publish
+
+    - name: Publish Carrinho API
+      run: dotnet publish ./Outsider.CarrinhoAPI/Outsider.CarrinhoAPI.csproj -c Release --no-build -o ./Outsider.CarrinhoAPI/publish
+    
+    - name: Publish Cupom API
+      run: dotnet publish ./Outsider.CupomAPI/Outsider.CupomAPI.csproj -c Release --no-build -o ./Outsider.CupomAPI/publish
+      
+    - name: Publish Endereço API
+      run: dotnet publish ./Outsider.EnderecoAPI/Outsider.EnderecoAPI.csproj -c Release --no-build -o ./Outsider.EnderecoAPI/publish
+    
+    - name: Publish Pagamento API
+      run: dotnet publish ./Outsider.PagamentoAPI/Outsider.PagamentoAPI.csproj -c Release --no-build -o ./Outsider.PagamentoAPI/publish
+      
+    - name: Publish Pedido API
+      run: dotnet publish ./Outsider.PedidoAPI/Outsider.PedidoAPI.csproj -c Release --no-build -o ./Outsider.PedidoAPI/publish
+      
+    - name: Publish Produto API
+      run: dotnet publish ./Outsider.ProdutoAPI/Outsider.ProdutoAPI.csproj -c Release --no-build -o ./Outsider.ProdutoAPI/publish
+      
+    - name: Publish Tabela Geral API
+      run: dotnet publish ./Outsider.TabelaGeralAPI/Outsider.TabelaGeralAPI.csproj -c Release --no-build -o ./Outsider.TabelaGeralAPI/publish
+    
+    - name: Publish Identity Server
+      run: dotnet publish ./Outsider.IdentityServer/Outsider.IdentityServer.csproj -c Release --no-build -o ./Outsider.IdentityServer/publish
+    
+    - name: Create tarball
+      run: tar --no-same-permissions -cvf publish.tar ./publish
+
+    - name: Deploy to Outsider API Gateway
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.APIGateway/publish'
+        target: '/var/www/html/Outsider/Outsider.APIGateway'
+        port: 22
+
+    - name: Deploy to Outsider Avaliação API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.AvalaiacaoAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Avaliacao'
+        port: 22
+   
+    - name: Deploy to Outsider Carrinho API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.CarrinhoAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Carrinho'
+        port: 22
+
+    - name: Deploy to Outsider Cupom API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.CupomAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Cupom'
+        port: 22
+
+    - name: Deploy to Outsider Endereço API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.EnderecoAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Endereco'
+        port: 22
+   
+    - name: Deploy to Outsider Pagamento API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.PagamentoAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Pagamento'
+        port: 22
+        
+    - name: Deploy to Outsider Pedido API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.PedidoAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Pedido'
+        port: 22
+
+    - name: Deploy to Outsider Produto API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.ProdutoAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.Produto'
+        port: 22
+   
+    - name: Deploy to Outsider Tabela Geral API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.TabelaGeralAPI/publish'
+        target: '/var/www/html/Outsider/Outsider.TabelaGeralAPI'
+        port: 22
+
+    - name: Deploy to Outsider Identity Server
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './Outsider.IdentityServer/publish'
+        target: '/var/www/html/Outsider/Outsider.IdentityServer'
+        port: 22
+        
+    - name: Restart services
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{secrets.VM_HOST}}
+        username: ${{secrets.VM_USERNAME}}
+        password: ${{secrets.VM_PASSWORD}}
+        script: |
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.APIGateway.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.AvaliacaoAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.CarrinhoAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.CupomAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.EnderecoAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.PagamentoAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.PedidoAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.ProdutoAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.TabelaGeralAPI.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart Outsider.IdentityServer.service
+      env:
+        VM_PASSWORD: ${{ secrets.VM_PASSWORD }}
