@@ -62,7 +62,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.APIGateway/publish'
-        target: '/var/www/html/Outsider/Outsider.APIGateway'
+        target: '/var/www/html'
         port: 22
 
     - name: Deploy to Outsider Avaliação API
@@ -72,7 +72,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.AvaliacaoAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Avaliacao'
+        target: '/var/www/html'
         port: 22
    
     - name: Deploy to Outsider Carrinho API
@@ -82,7 +82,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.CarrinhoAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Carrinho'
+        target: '/var/www/html'
         port: 22
 
     - name: Deploy to Outsider Cupom API
@@ -92,7 +92,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.CupomAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Cupom'
+        target: '/var/www/html'
         port: 22
 
     - name: Deploy to Outsider Endereço API
@@ -102,7 +102,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.EnderecoAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Endereco'
+        target: '/var/www/html'
         port: 22
    
     - name: Deploy to Outsider Pagamento API
@@ -112,7 +112,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.PagamentoAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Pagamento'
+        target: '/var/www/html'
         port: 22
         
     - name: Deploy to Outsider Pedido API
@@ -122,7 +122,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.PedidoAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Pedido'
+        target: '/var/www/html'
         port: 22
 
     - name: Deploy to Outsider Produto API
@@ -132,7 +132,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.ProdutoAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.Produto'
+        target: '/var/www/html'
         port: 22
    
     - name: Deploy to Outsider Tabela Geral API
@@ -142,7 +142,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.TabelaGeralAPI/publish'
-        target: '/var/www/html/Outsider/Outsider.TabelaGeralAPI'
+        target: '/var/www/html'
         port: 22
 
     - name: Deploy to Outsider Identity Server
@@ -152,7 +152,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './Outsider/Outsider.IdentityServer/publish'
-        target: '/var/www/html/Outsider/Outsider.IdentityServer'
+        target: '/var/www/html'
         port: 22
         
     - name: Restart services
