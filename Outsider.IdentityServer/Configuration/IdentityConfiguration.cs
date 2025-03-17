@@ -38,7 +38,8 @@ namespace Outsider.IdentityServer.Configuration
                     AllowedGrantTypes = GrantTypes.Code,
                     RedirectUris={"http://localhost:5173/callback","https://www.danieloliveira.net.br/Outsider.Web/callback" },
                     PostLogoutRedirectUris={"http://localhost:5173/", "https://www.danieloliveira.net.br/Outsider.Web/"},
-                    AllowedCorsOrigins={ "http://localhost:5173","https://www.danieloliveira.net.br/Outsider.Web" },
+                    AllowedCorsOrigins={ "http://localhost:5173","https://www.danieloliveira.net.br" },
+                    
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
@@ -46,10 +47,8 @@ namespace Outsider.IdentityServer.Configuration
                         IdentityServerConstants.StandardScopes.Profile,
                         "Outsider",
                     },
-                    AllowAccessTokensViaBrowser=true,
-                    RequireClientSecret=false,
-                    RequirePkce=true,
-                    AllowOfflineAccess=true,
+                    RequireClientSecret=true,
+                    RequirePkce=false,
                 }
             };
     }
