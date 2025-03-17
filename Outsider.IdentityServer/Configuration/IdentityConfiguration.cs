@@ -58,6 +58,7 @@ namespace Outsider.IdentityServer.Configuration
                     RequireClientSecret=false,
                     RequirePkce=true,
                     AllowOfflineAccess=true,
+                    Enabled=true
                 },
                 new Client
                 {
@@ -76,10 +77,7 @@ namespace Outsider.IdentityServer.Configuration
                         IdentityServerConstants.StandardScopes.Profile,
                         "Outsider",
                     },
-                    AllowAccessTokensViaBrowser=true,
-                    RequireClientSecret=false,
-                    RequirePkce=true,
-                    AllowOfflineAccess=true,
+                    Enabled=true
                 }
             };
     }
