@@ -1,9 +1,9 @@
 {
   "Routes": [
-    //"ProductAPI": "http://localhost:5012",
+    //"ProductAPI": "https://localhost:5012",
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -11,11 +11,11 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamhttpsMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/GetAll",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -23,7 +23,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/GetAll",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -31,7 +31,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -39,7 +39,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -47,7 +47,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -55,7 +55,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -63,7 +63,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -71,7 +71,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -79,7 +79,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/produto/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -87,17 +87,17 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.ProdutoAPI/api/produto/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
 
-    //"CartAPI": "http://localhost:5006",
+    //"CartAPI": "https://localhost:5006",
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/GetByUser/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -105,7 +105,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/GetByUser/{id}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -113,7 +113,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -121,7 +121,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -129,7 +129,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -137,7 +137,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -145,7 +145,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -153,7 +153,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -161,7 +161,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -169,7 +169,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -177,7 +177,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/removeCupom/{ususarioId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -185,7 +185,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/removeCupom/{ususarioId}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -193,7 +193,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/Checkout",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -201,17 +201,17 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/Checkout",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
 
-    //"CouponAPI": "http://localhost:5007"
+    //"CouponAPI": "https://localhost:5007"
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/Cupom",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -219,7 +219,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/Cupom",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -227,7 +227,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -235,7 +235,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -243,7 +243,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -251,7 +251,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -259,7 +259,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -267,7 +267,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -275,7 +275,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -283,16 +283,16 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"TabelaGeralAPI": "http://localhost:5013",
+    //"TabelaGeralAPI": "https://localhost:5013",
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -300,11 +300,11 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamhttpsMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -312,7 +312,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -320,7 +320,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeral",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -328,7 +328,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeral",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -336,7 +336,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -344,7 +344,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -352,7 +352,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -360,7 +360,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -368,7 +368,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralItemById/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -376,11 +376,11 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralItemById/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamhttpsMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -388,7 +388,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -396,7 +396,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeralItem",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -404,7 +404,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeralItem",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -412,7 +412,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -420,7 +420,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -428,7 +428,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -436,16 +436,16 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"EndereçoAPI": "http://localhost:5008",
+    //"EndereçoAPI": "https://localhost:5008",
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{usuarioId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -453,7 +453,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{usuarioId}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -461,7 +461,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/GetById/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -469,7 +469,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/GetById/{id}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -477,7 +477,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -485,7 +485,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -493,7 +493,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -501,7 +501,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
-      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -509,7 +509,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -517,16 +517,16 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"PagamentoAPI": "http://localhost:5009",
+    //"PagamentoAPI": "https://localhost:5009",
     {
       "DownstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -534,7 +534,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -542,7 +542,7 @@
     },
     {
       "DownstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -550,16 +550,16 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamhttpsMethod": [ "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"PedidoAPI": "http://localhost:5011",
+    //"PedidoAPI": "https://localhost:5011",
     {
       "DownstreamPathTemplate": "/Outsider.PedidoAPI/api/Pedido/{usuarioId}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -567,7 +567,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Outsider.PedidoAPI/api/Pedido/{usuarioId}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -575,6 +575,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:45999"
+    "BaseUrl": "https://localhost:45999"
   }
 }
