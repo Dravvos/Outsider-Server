@@ -49,6 +49,7 @@ namespace Outsider.IdentityServer.Configuration
                     },
                     RequireClientSecret=false,
                     AllowOfflineAccess=true,
+                    AllowAccessTokensViaBrowser=true,
                 }
             };
     }
