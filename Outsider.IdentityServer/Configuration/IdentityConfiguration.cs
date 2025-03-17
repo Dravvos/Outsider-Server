@@ -35,9 +35,9 @@ namespace Outsider.IdentityServer.Configuration
                     },
                     ClientName = "Outsider",
                     AllowedGrantTypes = GrantTypes.Code,
-                    RedirectUris={"http://localhost:5173/callback" },
-                    PostLogoutRedirectUris={"http://localhost:5173/"},
-                    AllowedCorsOrigins={ "http://localhost:5173" },
+                    RedirectUris={"http://localhost:5173/callback","https://www.danieloliveira.net.br/Outsider.Web/callback" },
+                    PostLogoutRedirectUris={"http://localhost:5173/", "https://www.danieloliveira.net.br/Outsider.Web/"},
+                    AllowedCorsOrigins={ "http://localhost:5173","https://www.danieloliveira.net.br/Outsider.Web" },
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
@@ -49,25 +49,6 @@ namespace Outsider.IdentityServer.Configuration
                     RequireClientSecret=false,
                     RequirePkce=true,
                     AllowOfflineAccess=true,
-                    Enabled=true
-                },
-                new Client
-                {
-                    ClientId="Outsider-Client",
-                    ClientName = "Outsider",
-                    AllowedGrantTypes = GrantTypes.Code,
-                    RedirectUris={"https://www.danieloliveira.net.br/Outsider.Web/callback" },
-                    PostLogoutRedirectUris={"https://www.danieloliveira.net.br/Outsider.Web/"},
-                    AllowedCorsOrigins={ "https://www.danieloliveira.net.br/Outsider.Web" },
-                    AllowedScopes =
-                    {
-                        IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Email,
-                        IdentityServerConstants.StandardScopes.Profile,
-                        "Outsider",
-                    },
-                    RequireClientSecret=false,
-                    RequirePkce=true,
                     Enabled=true
                 }
             };
