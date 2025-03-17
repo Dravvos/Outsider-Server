@@ -22,6 +22,8 @@ builder.Services.AddDbContext<PostgreContext>(options =>
     options.UseNpgsql(connection);
 });
 
+
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<PostgreContext>()
     .AddDefaultTokenProviders();
@@ -52,6 +54,17 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", builder =>
+        {
+            builder.WithOrigins("https://www.danieloliveira.net.br/Outsider.Web")
+                   .AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .AllowCredentials();
+        });
+    });
+
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
         {
@@ -59,26 +72,37 @@ else
             options.Audience = "Outsider";
         });
 
-    
+    builder.Services.ConfigureApplicationCookie(options =>
+    {
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+        options.Cookie.SameSite = SameSiteMode.None;
+    });
 }
+
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 
 var app = builder.Build();
 
-app.UseCors(cors =>
-{
-    cors.AllowAnyHeader();
-    cors.AllowAnyMethod();
-    cors.AllowAnyOrigin();
-});
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+    app.UseCors("AllowAll");
+}
+else
+{
+    app.UseCors(cors =>
+    {
+        cors.AllowAnyHeader();
+        cors.AllowAnyMethod();
+        cors.AllowAnyOrigin();
+    });
+
 }
 
 app.UseMiddleware<CustomMiddleware>();
