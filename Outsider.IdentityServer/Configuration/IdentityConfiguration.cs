@@ -58,6 +58,28 @@ namespace Outsider.IdentityServer.Configuration
                     RequireClientSecret=false,
                     RequirePkce=true,
                     AllowOfflineAccess=true,
+                },
+                new Client
+                {
+                    ClientId="Outsider-Client",
+                    ClientSecrets={new Secret("28011d120ca64d60a1d1ea87d026ce3540e64c7debd849998fdd5a6c362f2168af5c".Sha256())
+                    },
+                    ClientName = "Outsider",
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RedirectUris={"https://www.danieloliveira.net.br/Outsider.Web/callback" },
+                    PostLogoutRedirectUris={"https://www.danieloliveira.net.br/Outsider.Web/"},
+                    AllowedCorsOrigins={ "https://www.danieloliveira.net.br/Outsider.Web" },
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Email,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "Outsider",
+                    },
+                    AllowAccessTokensViaBrowser=true,
+                    RequireClientSecret=false,
+                    RequirePkce=true,
+                    AllowOfflineAccess=true,
                 }
             };
     }
