@@ -47,6 +47,17 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", builder =>
+        {
+            builder.WithOrigins("https://www.danieloliveira.net.br/Outsider.Web")
+                   .AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .AllowCredentials();
+        });
+    });
+
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
         {
@@ -108,14 +119,20 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    
+    app.UseCors(cors =>
+    {
+        cors.AllowAnyHeader();
+        cors.AllowAnyMethod();
+        cors.AllowAnyOrigin();
+    });
+}
+else
+{
+    app.UseCors("AllowAll");
 }
 
-app.UseCors(cors =>
-{
-    cors.AllowAnyHeader();
-    cors.AllowAnyMethod();
-    cors.AllowAnyOrigin();
-});
+
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
