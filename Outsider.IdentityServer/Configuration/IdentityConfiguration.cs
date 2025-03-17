@@ -31,7 +31,8 @@ namespace Outsider.IdentityServer.Configuration
                new Client
                 {
                     ClientId="vue-client",
-                    ClientSecrets={new Secret("d89b74fb41bb45f590a2fdcaa66339a72642a97c920442c3a69f231055ad2bac3b6e".Sha256())
+                    ClientSecrets={new Secret("d89b74fb41bb45f590a2fdcaa66339a72642a97c920442c3a69f231055ad2bac3b6e".Sha256()),
+                        new Secret("28011d120ca64d60a1d1ea87d026ce3540e64c7debd849998fdd5a6c362f2168af5c".Sha256())
                     },
                     ClientName = "Outsider",
                     AllowedGrantTypes = GrantTypes.Code,
@@ -49,7 +50,6 @@ namespace Outsider.IdentityServer.Configuration
                     RequireClientSecret=false,
                     RequirePkce=true,
                     AllowOfflineAccess=true,
-                    Enabled=true
                 }
             };
     }
