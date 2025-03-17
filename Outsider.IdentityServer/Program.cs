@@ -35,6 +35,8 @@ builder.Services.AddIdentityServer(options =>
     options.Events.RaiseFailureEvents = true;
     options.Events.RaiseSuccessEvents = true;
     options.EmitStaticAudienceClaim = true;
+    if(builder.Environment.IsProduction())
+        options.IssuerUri = "https://www.danieloliveira.net.br/Outsider.IdentityServer";
 
 }).AddInMemoryIdentityResources(IdentityConfiguration.IdentityResources)
 .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
