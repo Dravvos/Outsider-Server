@@ -47,7 +47,7 @@ namespace Outsider.IdentityServer.Configuration
                         IdentityServerConstants.StandardScopes.Profile,
                         "Outsider",
                     },
-                    RequireClientSecret=true,                    
+                    RequireClientSecret=false,
                 }
             };
     }
