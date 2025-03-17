@@ -48,6 +48,7 @@ namespace Outsider.IdentityServer.Configuration
                         "Outsider",
                     },
                     RequireClientSecret=false,
+                    AllowOfflineAccess=true,
                 }
             };
     }
