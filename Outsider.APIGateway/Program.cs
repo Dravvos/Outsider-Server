@@ -1,6 +1,7 @@
 using Microsoft.IdentityModel.Tokens;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Outsider.APIGateway;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,7 +36,7 @@ else
 builder.Services.AddOcelot();
 
 var app = builder.Build();
-
+app.UseMiddleware<CustomMiddleware>();
 if(app.Environment.IsDevelopment())
 {
     app.UseCors(cors =>

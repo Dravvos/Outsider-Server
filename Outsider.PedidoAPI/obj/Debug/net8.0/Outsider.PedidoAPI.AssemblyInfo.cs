@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Outsider.PedidoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5cc57444b2371416c47822e83ae0b7d8b2d593d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e133789a9139012dfdf7aac168a447e383a529a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Outsider.PedidoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Outsider.PedidoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

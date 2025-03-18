@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Outsider.Pagamentos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45a989a3145189c87b9b400b0f2efc1f1479d8e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e133789a9139012dfdf7aac168a447e383a529a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Outsider.Pagamentos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Outsider.Pagamentos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

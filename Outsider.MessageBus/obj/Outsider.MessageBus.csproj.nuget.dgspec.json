@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {}
+    "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {}
   },
   "projects": {
-    "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
+    "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
+        "projectUniqueName": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
         "projectName": "Outsider.MessageBus",
-        "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
-        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\obj\\",
+        "projectPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
+        "packagesPath": "C:\\Users\\supero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\supero\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,9 +43,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
