@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Outsider.AvaliacaoAPI;
 using Outsider.AvaliacaoAPI.Config;
 using Outsider.AvaliacaoAPI.MessageConsumer;
 using Outsider.AvaliacaoAPI.Model.Context;
@@ -121,7 +122,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<CustomMiddleware>();
 
 app.UseCors(cors =>
 {

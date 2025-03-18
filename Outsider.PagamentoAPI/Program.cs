@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Outsider.PagamentoAPI;
 using Outsider.PagamentoAPI.MessageConsumer;
 using Outsider.PagamentoAPI.Model.Context;
 using Outsider.PagamentoAPI.RabbitMQSender;
@@ -101,7 +102,7 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.UseMiddleware<CustomMiddleware>();
 
 app.UseCors(cors =>
 {

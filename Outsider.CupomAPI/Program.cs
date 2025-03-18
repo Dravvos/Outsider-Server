@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Outsider.CupomAPI;
 using Outsider.CupomAPI.Model.Context;
 using Outsider.CupomAPI.Repository;
 using Outsider.CupomAPI.Service;
@@ -103,6 +104,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMiddleware<CustomMiddleware>();
 
 app.UseCors(cors =>
 {

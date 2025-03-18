@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Outsider.TabelaGeralAPI;
 using Outsider.TabelaGeralAPI.Config;
 using Outsider.TabelaGeralAPI.Model.Context;
 using Outsider.TabelaGeralAPI.RabbitMQSender;
@@ -119,6 +120,7 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseMiddleware<CustomMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();

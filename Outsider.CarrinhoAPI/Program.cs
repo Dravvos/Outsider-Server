@@ -10,6 +10,7 @@ using StackExchange.Redis;
 using Outsider.CarrinhoAPI.Service;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using Outsider.CarrinhoAPI.MessageConsumer;
+using Outsider.CarrinhoAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -124,7 +125,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<CustomMiddleware>();
 app.UseCors(cors =>
 {
     cors.AllowAnyHeader();

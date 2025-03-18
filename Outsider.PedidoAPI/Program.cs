@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Outsider.PedidoAPI;
 using Outsider.PedidoAPI.Config;
 using Outsider.PedidoAPI.MessageConsumer;
 using Outsider.PedidoAPI.Model.Context;
@@ -125,7 +126,7 @@ app.UseCors(cors =>
     cors.AllowAnyMethod();
     cors.AllowAnyOrigin();
 });
-
+app.UseMiddleware<CustomMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

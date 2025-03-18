@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
 using Outside.EnderecoAPI.Model.Context;
+using Outsider.EnderecoAPI;
 using Outsider.EnderecoAPI.Config;
 using Outsider.EnderecoAPI.Model.Context;
 using Outsider.EnderecoAPI.RabbitMQSender;
@@ -114,7 +115,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<CustomMiddleware>();
 app.UseCors(cors =>
 {
     cors.AllowAnyHeader();
