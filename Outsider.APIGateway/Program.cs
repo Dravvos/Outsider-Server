@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 if (builder.Environment.IsProduction())
 {
-    builder.Configuration.AddJsonFile("./ocelotProd.json", optional: false, reloadOnChange: true);
+    builder.Configuration.AddJsonFile(Environment.GetEnvironmentVariable("ocelotProdPath")!, optional: false, reloadOnChange: true);
 }
 else
 {
