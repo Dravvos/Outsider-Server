@@ -20,16 +20,6 @@ if (builder.Environment.IsDevelopment())
 else
 {
     builder.Configuration.AddJsonFile(Environment.GetEnvironmentVariable("ocelotProdPath")!, optional: false, reloadOnChange: true);
-    builder.Services.AddCors(options =>
-    {
-        options.AddPolicy("AllowAll", builder =>
-        {
-            builder.AllowAnyOrigin()
-                   .AllowAnyMethod()
-                   .AllowAnyHeader()
-                   .AllowCredentials();
-        });
-    });
 
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
@@ -54,10 +44,6 @@ if(app.Environment.IsDevelopment())
         cors.AllowAnyMethod();
         cors.AllowAnyOrigin();
     });
-}
-else
-{
-    app.UseCors("AllowAll");
 }
 
 // Configure the HTTP request pipeline.

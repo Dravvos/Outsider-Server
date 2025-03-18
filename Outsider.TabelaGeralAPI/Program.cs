@@ -47,17 +47,7 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-    builder.Services.AddCors(options =>
-    {
-        options.AddPolicy("AllowAll", builder =>
-        {
-            builder.AllowAnyOrigin()
-                   .AllowAnyMethod()
-                   .AllowAnyHeader()
-                   .AllowCredentials();
-        });
-    });
-
+   
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
         {
@@ -127,11 +117,6 @@ if (app.Environment.IsDevelopment())
         cors.AllowAnyOrigin();
     });
 }
-else
-{
-    app.UseCors("AllowAll");
-}
-
 
 
 app.UseHttpsRedirection();
