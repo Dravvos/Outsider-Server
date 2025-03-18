@@ -11,7 +11,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Produto",
-      "UpstreamhttpsMethod": [ "GET" ]
+      "UpstreamhttpsMethod": [ "GET", "POST"]
     },
     {
       "DownstreamPathTemplate": "/api/Produto/GetAll",
@@ -39,55 +39,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Produto/{id}",
-      "UpstreamhttpsMethod": [ "GET" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/Produto",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5012
-        }
-      ],
-      "UpstreamPathTemplate": "/api/Produto",
-      "UpstreamhttpsMethod": [ "POST" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/Produto/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5012
-        }
-      ],
-      "UpstreamPathTemplate": "/api/Produto/{id}",
-      "UpstreamhttpsMethod": [ "PUT" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/produto/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5012
-        }
-      ],
-      "UpstreamPathTemplate": "/api/produto/{id}",
-      "UpstreamhttpsMethod": [ "DELETE" ],
+      "UpstreamhttpsMethod": [ "GET", "PUT", "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -121,23 +73,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho",
-      "UpstreamhttpsMethod": [ "POST" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/carrinho",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5006
-        }
-      ],
-      "UpstreamPathTemplate": "/api/carrinho",
-      "UpstreamhttpsMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "POST", "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -219,7 +155,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Cupom",
-      "UpstreamhttpsMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET", "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
@@ -242,22 +178,6 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/cupom/{cupomCodigo}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5007
-        }
-      ],
-      "UpstreamPathTemplate": "/api/cupom",
-      "UpstreamhttpsMethod": [ "POST" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
-    {
       "DownstreamPathTemplate": "/api/cupom/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -267,28 +187,13 @@
         }
       ],
       "UpstreamPathTemplate": "/api/cupom/{id}",
-      "UpstreamhttpsMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT", "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    {
-      "DownstreamPathTemplate": "/api/cupom/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5007
-        }
-      ],
-      "UpstreamPathTemplate": "/api/cupom/{id}",
-      "UpstreamhttpsMethod": [ "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
+
     //"TabelaGeralAPI": "https://127.0.0.1:5013",
     {
       "DownstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralById/{id}",
@@ -501,28 +406,13 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Endereco/{id}",
-      "UpstreamhttpsMethod": [ "PUT" ],
+      "UpstreamhttpsMethod": [ "PUT", "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    {
-      "DownstreamPathTemplate": "/api/Endereco/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5008
-        }
-      ],
-      "UpstreamPathTemplate": "/api/Endereco/{id}",
-      "UpstreamhttpsMethod": [ "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
+
     //"PagamentoAPI": "https://127.0.0.1:5009",
     {
       "DownstreamPathTemplate": "/api/Pagamento/{carrinhoId}",
@@ -534,28 +424,13 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Pagamento/{carrinhoId}",
-      "UpstreamhttpsMethod": [ "GET" ],
+      "UpstreamhttpsMethod": [ "GET", "POST" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    {
-      "DownstreamPathTemplate": "/api/Pagamento/{carrinhoId}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "127.0.0.1",
-          "Port": 5009
-        }
-      ],
-      "UpstreamPathTemplate": "/api/Pagamento/{carrinhoId}",
-      "UpstreamhttpsMethod": [ "POST" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": [ "Outsider", "openid", "profile" ]
-      }
-    },
+
     //"PedidoAPI": "https://127.0.0.1:5011",
     {
       "DownstreamPathTemplate": "/api/Pedido/{usuarioId}",
