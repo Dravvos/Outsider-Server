@@ -24,7 +24,7 @@ else
     {
         options.AddPolicy("AllowAll", builder =>
         {
-            builder.WithOrigins("https://www.danieloliveira.net.br/Outsider.Web")
+            builder.AllowAnyOrigin()
                    .AllowAnyMethod()
                    .AllowAnyHeader()
                    .AllowCredentials();
