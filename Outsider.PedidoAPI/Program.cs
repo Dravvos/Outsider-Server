@@ -115,7 +115,7 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-
+app.UseMiddleware<CustomMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -126,7 +126,7 @@ app.UseCors(cors =>
     cors.AllowAnyMethod();
     cors.AllowAnyOrigin();
 });
-app.UseMiddleware<CustomMiddleware>();
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

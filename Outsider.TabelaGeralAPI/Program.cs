@@ -105,6 +105,8 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
+app.UseMiddleware<CustomMiddleware>();
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -120,7 +122,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseMiddleware<CustomMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();

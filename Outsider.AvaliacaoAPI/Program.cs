@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connection = builder.Configuration["OutsiderConnection"];
 builder.Services.AddDbContext<OutsiderContext>(options =>
-{    
+{
     options.UseSqlServer(connection);
 });
 
@@ -116,13 +116,12 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 app.UseMiddleware<CustomMiddleware>();
+// Configure the HTTP request pipeline.
+app.UseSwagger();
+app.UseSwaggerUI();
+
+
 
 app.UseCors(cors =>
 {

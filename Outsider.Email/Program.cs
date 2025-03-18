@@ -92,10 +92,9 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
-
+app.UseMiddleware<CustomMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseMiddleware<CustomMiddleware>();
 
 app.UseCors(cors =>
 {

@@ -18,7 +18,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connection = builder.Configuration["OutsiderConnection"];
 builder.Services.AddDbContext<OutsiderContext>(options =>
-{    
+{
     options.UseSqlServer(connection);
 });
 
@@ -36,7 +36,7 @@ builder.Services.AddScoped<ICupomRepository, CupomRepository>();
 builder.Services.AddScoped<ICarrinhoService, CarrinhoService>();
 builder.Services.AddScoped<ICupomService, CupomService>();
 
-builder.Services.AddHttpClient<ICupomRepository, CupomRepository>(s=>s.BaseAddress=new Uri(builder.Configuration["CupomAPI"]!));
+builder.Services.AddHttpClient<ICupomRepository, CupomRepository>(s => s.BaseAddress = new Uri(builder.Configuration["CupomAPI"]!));
 
 builder.Services.AddSingleton<IRabbitMQMessageSender, RabbitMQMessageSender>();
 
@@ -119,13 +119,11 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 app.UseMiddleware<CustomMiddleware>();
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.UseCors(cors =>
 {
     cors.AllowAnyHeader();
