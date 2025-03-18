@@ -1,13 +1,13 @@
 {
   "Routes": [
-    //"ProductAPI": "https://127.0.0.1:5012",
+    //"ProductAPI": "https://www.danieloliveira.net.br:443",
     {
       "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5012
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Produto",
@@ -18,8 +18,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5012
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Produto/GetAll",
@@ -34,8 +34,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5012
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Produto/{id}",
@@ -46,14 +46,14 @@
       }
     },
 
-    //"CartAPI": "https://127.0.0.1:5006",
+    //"CartAPI": "https://www.danieloliveira.net.br:443",
     {
       "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/GetByUser/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5006
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho/GetByUser/{id}",
@@ -68,8 +68,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5006
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho",
@@ -84,8 +84,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5006
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho/{id}",
@@ -100,8 +100,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5006
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
@@ -116,8 +116,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5006
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho/removeCupom/{ususarioId}",
@@ -132,8 +132,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5006
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/carrinho/Checkout",
@@ -144,14 +144,14 @@
       }
     },
 
-    //"CouponAPI": "https://127.0.0.1:5007"
+    //"CouponAPI": "https://www.danieloliveira.net.br:443"
     {
       "DownstreamPathTemplate": "/Outsider.CupomAPI/api/Cupom",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5007
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Cupom",
@@ -166,8 +166,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5007
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/cupom/{cupomCodigo}",
@@ -182,8 +182,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5007
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/cupom/{id}",
@@ -194,7 +194,7 @@
       }
     },
 
-    //"TabelaGeralAPI": "https://127.0.0.1:443",
+    //"TabelaGeralAPI": "https://www.danieloliveira.net.br:443",
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
       "DownstreamScheme": "https",
@@ -347,14 +347,14 @@
         "AllowedScopes": [ "Outsider", "openid", "profile" ]
       }
     },
-    //"EndereçoAPI": "https://127.0.0.1:5008",
+    //"EndereçoAPI": "https://www.danieloliveira.net.br:443",
     {
       "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{usuarioId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5008
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Endereco/{usuarioId}",
@@ -369,8 +369,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5008
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Endereco/GetById/{id}",
@@ -385,8 +385,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5008
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Endereco/",
@@ -401,8 +401,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5008
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Endereco/{id}",
@@ -413,14 +413,14 @@
       }
     },
 
-    //"PagamentoAPI": "https://127.0.0.1:5009",
+    //"PagamentoAPI": "https://www.danieloliveira.net.br:443",
     {
       "DownstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5009
+          "Host": "www.danieloliveira.net.br",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/Pagamento/{carrinhoId}",
@@ -431,13 +431,13 @@
       }
     },
 
-    //"PedidoAPI": "https://127.0.0.1:5011",
+    //"PedidoAPI": "https://www.danieloliveira.net.br:5011",
     {
       "DownstreamPathTemplate": "/Outsider.PedidoAPI/api/Pedido/{usuarioId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
+          "Host": "www.danieloliveira.net.br",
           "Port": 5011
         }
       ],
@@ -450,6 +450,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://127.0.0.1:45999"
+    "BaseUrl": "https://www.danieloliveira.net.br:45999"
   }
 }
