@@ -194,14 +194,14 @@
       }
     },
 
-    //"TabelaGeralAPI": "https://127.0.0.1:5013",
+    //"TabelaGeralAPI": "https://127.0.0.1:443",
     {
       "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralById/{id}",
@@ -212,8 +212,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
@@ -228,8 +228,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/AddTabelaGeral",
@@ -244,8 +244,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
@@ -260,8 +260,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
@@ -276,8 +276,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralItemById/{id}",
@@ -288,8 +288,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
@@ -304,8 +304,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/AddTabelaGeralItem",
@@ -320,8 +320,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
@@ -336,8 +336,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "127.0.0.1",
-          "Port": 5013
+          "Host": "145.223.95.97",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
