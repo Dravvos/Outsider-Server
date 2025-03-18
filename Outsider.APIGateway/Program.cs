@@ -4,19 +4,9 @@ using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-if (builder.Environment.IsProduction())
-{
-    builder.Configuration.AddJsonFile(Environment.GetEnvironmentVariable("ocelotProdPath")!, optional: false, reloadOnChange: true);
-}
-else
-{
-    builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
-}
-
 if (builder.Environment.IsDevelopment())
 {
-
+    builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
         {
@@ -29,6 +19,18 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
+    builder.Configuration.AddJsonFile(Environment.GetEnvironmentVariable("ocelotProdPath")!, optional: false, reloadOnChange: true);
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", builder =>
+        {
+            builder.WithOrigins("https://www.danieloliveira.net.br/Outsider.Web")
+                   .AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .AllowCredentials();
+        });
+    });
+
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
         {
@@ -44,12 +46,20 @@ builder.Services.AddOcelot();
 
 var app = builder.Build();
 
-app.UseCors(cors =>
+if(app.Environment.IsDevelopment())
 {
-    cors.AllowAnyHeader();
-    cors.AllowAnyMethod();
-    cors.AllowAnyOrigin();
-});
+    app.UseCors(cors =>
+    {
+        cors.AllowAnyHeader();
+        cors.AllowAnyMethod();
+        cors.AllowAnyOrigin();
+    });
+}
+else
+{
+    app.UseCors("AllowAll");
+}
+
 // Configure the HTTP request pipeline.
 app.UseOcelot().Wait();
 app.Run();
