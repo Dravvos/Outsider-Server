@@ -8,6 +8,7 @@ using Outsider.ProdutoAPI.Repository;
 using Outsider.ProdutoAPI.Services;
 using Outsider.tabelaGeralAPI.MessageConsumer;
 using Outsider.ProdutoAPI.RabbitMQSender;
+using Outsider.ProdutoAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
