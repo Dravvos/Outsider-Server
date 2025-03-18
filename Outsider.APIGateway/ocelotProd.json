@@ -2,7 +2,7 @@
   "Routes": [
     //"ProductAPI": "https://127.0.0.1:5012",
     {
-      "DownstreamPathTemplate": "/api/Produto",
+      "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -14,7 +14,7 @@
       "UpstreamhttpsMethod": [ "GET", "POST"]
     },
     {
-      "DownstreamPathTemplate": "/api/Produto/GetAll",
+      "DownstreamPathTemplate": "/Outsider.ProdutoAPI/Produto/GetAll",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -30,7 +30,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/Produto/{id}",
+      "DownstreamPathTemplate": "/Outsider.ProdutoAPI/api/Produto/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -48,7 +48,7 @@
 
     //"CartAPI": "https://127.0.0.1:5006",
     {
-      "DownstreamPathTemplate": "/api/carrinho/GetByUser/{id}",
+      "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/GetByUser/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/carrinho",
+      "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -80,7 +80,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/carrinho/{id}",
+      "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -96,7 +96,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
+      "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/AplicarCupom/{usuarioId}/{cupom}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -112,7 +112,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/carrinho/removeCupom/{ususarioId}",
+      "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/removeCupom/{ususarioId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -128,7 +128,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/carrinho/Checkout",
+      "DownstreamPathTemplate": "/Outsider.CarrinhoAPI/api/carrinho/Checkout",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -146,7 +146,7 @@
 
     //"CouponAPI": "https://127.0.0.1:5007"
     {
-      "DownstreamPathTemplate": "/api/Cupom",
+      "DownstreamPathTemplate": "/Outsider.CupomAPI/api/Cupom",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -162,7 +162,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/cupom/{cupomCodigo}",
+      "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{cupomCodigo}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -178,7 +178,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/cupom/{id}",
+      "DownstreamPathTemplate": "/Outsider.CupomAPI/api/cupom/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -196,7 +196,7 @@
 
     //"TabelaGeralAPI": "https://127.0.0.1:5013",
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralById/{id}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralById/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -208,7 +208,7 @@
       "UpstreamhttpsMethod": [ "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralByNome/{nome}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -224,7 +224,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/AddTabelaGeral",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeral",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -240,7 +240,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeral/{tabelaGeralId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -256,7 +256,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeral/{tabelaGeralId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -272,7 +272,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/GetTabelaGeralItemById/{id}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelaGeralItemById/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -284,7 +284,7 @@
       "UpstreamhttpsMethod": [ "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/GetTabelasGeraisItems?tabelaGeralId={id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -300,7 +300,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/AddTabelaGeralItem",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/AddTabelaGeralItem",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -316,7 +316,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/UpdateTabelaGeralItem/{tabelaGeralItemId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -332,7 +332,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
+      "DownstreamPathTemplate": "/Outsider.TabelaGeralAPI/api/TabelaGeral/DeleteTabelaGeralItem/{tabelaGeralItemId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -349,7 +349,7 @@
     },
     //"EndereçoAPI": "https://127.0.0.1:5008",
     {
-      "DownstreamPathTemplate": "/api/Endereco/{usuarioId}",
+      "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{usuarioId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -365,7 +365,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/Endereco/GetById/{id}",
+      "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/GetById/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -381,7 +381,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/Endereco",
+      "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -397,7 +397,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/Endereco/{id}",
+      "DownstreamPathTemplate": "/Outsider.EnderecoAPI/api/Endereco/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -415,7 +415,7 @@
 
     //"PagamentoAPI": "https://127.0.0.1:5009",
     {
-      "DownstreamPathTemplate": "/api/Pagamento/{carrinhoId}",
+      "DownstreamPathTemplate": "/Outsider.PagamentoAPI/api/Pagamento/{carrinhoId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -433,7 +433,7 @@
 
     //"PedidoAPI": "https://127.0.0.1:5011",
     {
-      "DownstreamPathTemplate": "/api/Pedido/{usuarioId}",
+      "DownstreamPathTemplate": "/Outsider.PedidoAPI/api/Pedido/{usuarioId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
