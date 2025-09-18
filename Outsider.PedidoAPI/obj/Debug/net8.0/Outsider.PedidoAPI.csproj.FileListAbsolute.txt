@@ -139,12 +139,6 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\ne
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets.build.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets.development.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.PedidoAPI.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.PedidoAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.Outsider.PedidoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Outsider.PedidoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Outsider.PedidoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.40D12F18.Up2Date
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.PedidoAPI.dll
@@ -153,3 +147,8 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\ne
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.PedidoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\ref\Outsider.PedidoAPI.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\Outsider.PedidoAPI.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PedidoAPI\obj\Debug\net8.0\staticwebassets.build.json.cache

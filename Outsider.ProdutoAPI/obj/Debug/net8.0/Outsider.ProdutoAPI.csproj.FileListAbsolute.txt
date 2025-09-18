@@ -294,12 +294,6 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\n
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets.build.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets.development.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.ProdutoAPI.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.ProdutoAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.Outsider.ProdutoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Outsider.ProdutoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Outsider.ProdutoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\Outsider.2B859ECF.Up2Date
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\Outsider.ProdutoAPI.dll
@@ -307,3 +301,8 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\n
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\Outsider.ProdutoAPI.pdb
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\Outsider.ProdutoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\ref\Outsider.ProdutoAPI.dll
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.ProdutoAPI\obj\Debug\net8.0\staticwebassets.build.json.cache

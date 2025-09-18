@@ -65,7 +65,7 @@ namespace Outsider.ProdutoAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize]
+        [AllowAnonymous]
         public async Task<ActionResult<ProdutoDTO>> FindById(Guid id)
         {
             try
@@ -84,7 +84,7 @@ namespace Outsider.ProdutoAPI.Controllers
         }
 
         [HttpGet("{categoriaId}/{corId}/{nome}")]
-        [Authorize]
+        [AllowAnonymous]
         public async Task<ActionResult<ProdutoDTO>> FindProdutosEmEstoque(Guid categoriaId, Guid corId, string nome)
         {
             try

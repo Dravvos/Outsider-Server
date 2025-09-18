@@ -139,12 +139,6 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets.build.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets.development.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.Email.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.Email.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets\msbuild.build.Outsider.Email.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Outsider.Email.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Outsider.Email.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.36F53D45.Up2Date
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.Email.dll
@@ -153,3 +147,8 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.Email.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\ref\Outsider.Email.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\Outsider.Email.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.Email\obj\Debug\net8.0\staticwebassets.build.json.cache

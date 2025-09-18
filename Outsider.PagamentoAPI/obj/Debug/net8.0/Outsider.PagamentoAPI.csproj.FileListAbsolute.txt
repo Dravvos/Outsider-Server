@@ -134,12 +134,6 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets.build.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets.development.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.PagamentoAPI.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.PagamentoAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.Outsider.PagamentoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Outsider.PagamentoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Outsider.PagamentoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.A0C5C3FA.Up2Date
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.PagamentoAPI.dll
@@ -148,3 +142,8 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.PagamentoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\ref\Outsider.PagamentoAPI.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\Outsider.PagamentoAPI.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.PagamentoAPI\obj\Debug\net8.0\staticwebassets.build.json.cache

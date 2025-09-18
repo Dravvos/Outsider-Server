@@ -143,12 +143,6 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets.build.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets.development.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.CarrinhoAPI.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets\msbuild.Outsider.CarrinhoAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.Outsider.CarrinhoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Outsider.CarrinhoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Outsider.CarrinhoAPI.props
-D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.B78F65C5.Up2Date
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.CarrinhoAPI.dll
@@ -157,3 +151,8 @@ D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.CarrinhoAPI.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\ref\Outsider.CarrinhoAPI.dll
 D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\Outsider.CarrinhoAPI.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Microsoft Visual Studio\source\repos\Outsider\Outsider.CarrinhoAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
