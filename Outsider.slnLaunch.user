@@ -23,10 +23,6 @@
         "Action": "Start"
       },
       {
-        "Path": "Outside.ProdutoAPI\\Outsider.ProdutoAPI.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "Outsider.AvaliacaoAPI\\Outsider.AvaliacaoAPI.csproj",
         "Action": "Start"
       },
@@ -44,6 +40,10 @@
       },
       {
         "Path": "Outsider.CupomAPI\\Outsider.CupomAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Outsider.ProdutoAPI\\Outsider.ProdutoAPI.csproj",
         "Action": "Start"
       }
     ]

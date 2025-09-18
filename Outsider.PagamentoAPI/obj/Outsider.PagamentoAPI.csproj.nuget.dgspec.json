@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj": {}
+    "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
+    "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
+        "projectUniqueName": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
         "projectName": "Outsider.MessageBus",
-        "projectPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
-        "packagesPath": "C:\\Users\\supero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\obj\\",
+        "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\supero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -66,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj": {
+    "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj",
+        "projectUniqueName": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj",
         "projectName": "Outsider.PagamentoAPI",
-        "projectPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj",
-        "packagesPath": "C:\\Users\\supero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.PagamentoAPI\\obj\\",
+        "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.PagamentoAPI\\Outsider.PagamentoAPI.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.PagamentoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\supero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,11 +99,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
-                "projectPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.MessageBus\\Outsider.MessageBus.csproj"
+              "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
+                "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj"
               },
-              "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj": {
-                "projectPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj"
+              "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj": {
+                "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj"
               }
             }
           }
@@ -118,7 +118,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -178,24 +178,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj": {
+    "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj",
+        "projectUniqueName": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj",
         "projectName": "Outsider.Pagamentos",
-        "projectPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj",
-        "packagesPath": "C:\\Users\\supero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\supero\\Source\\Repos\\Outsider-Server\\Outsider.Pagamentos\\obj\\",
+        "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.Pagamentos\\Outsider.Pagamentos.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.Pagamentos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\supero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -223,7 +223,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -250,7 +250,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

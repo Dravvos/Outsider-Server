@@ -8,6 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 if (builder.Environment.IsDevelopment())
 {
     builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
+
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll",
+            builder => builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+    });
+
     builder.Services.AddAuthentication()
         .AddJwtBearer("Bearer", options =>
         {
