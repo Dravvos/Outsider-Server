@@ -1564,6 +1564,16 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "Outsider.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Outsider.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Outsider.DTO.dll": {}
+        }
+      },
       "Outsider.MessageBus/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4243,6 +4253,11 @@
         "version.txt"
       ]
     },
+    "Outsider.DTO/1.0.0": {
+      "type": "project",
+      "path": "../Outsider.DTO/Outsider.DTO.csproj",
+      "msbuildProject": "../Outsider.DTO/Outsider.DTO.csproj"
+    },
     "Outsider.MessageBus/1.0.0": {
       "type": "project",
       "path": "../Outsider.MessageBus/Outsider.MessageBus.csproj",
@@ -4261,6 +4276,7 @@
       "Microsoft.EntityFrameworkCore >= 8.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.12",
+      "Outsider.DTO >= 1.0.0",
       "Outsider.MessageBus >= 1.0.0",
       "Outsider.Pagamentos >= 1.0.0",
       "RabbitMQ.Client >= 7.0.0",
@@ -4301,6 +4317,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.DTO\\Outsider.DTO.csproj": {
+              "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.DTO\\Outsider.DTO.csproj"
+            },
             "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj": {
               "projectPath": "D:\\Microsoft Visual Studio\\source\\repos\\Outsider\\Outsider.MessageBus\\Outsider.MessageBus.csproj"
             },

@@ -4,6 +4,7 @@ namespace Outsider.CarrinhoAPI.Repository
 {
     public interface ICarrinhoRepository
     {
+        Task<IEnumerable<ItemCarrinhoDTO>> GetCarrinhoPorId(Guid id);
         Task<IEnumerable<ItemCarrinhoDTO>> GetCarrinhoPorUsuario(Guid usuarioId);
         Task AdicionarItemAoCarrinho(Guid usuarioId, Guid produtoId, int quantidade);
         Task<bool> RemoverItemDoCarrinho(Guid itemCarrinhoId);

@@ -1,9 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Outsider.DTO;
 using Outsider.Pagamentos;
 using StackExchange.Redis;
+using System.Net;
+using System.Net.Http.Headers;
 using System.Security.Cryptography;
+using System.Text.Json;
 
 
 namespace Outsider.PagamentoAPI.Controllers
@@ -40,7 +45,7 @@ namespace Outsider.PagamentoAPI.Controllers
         }
 
         [HttpPost("{carrinhoId}"), Authorize(Roles = Utils.Role.Cliente)]
-        public async Task<IActionResult> Process(Guid carrinhoId,[FromBody] float Valor)
+        public async Task<IActionResult> Process(Guid carrinhoId, [FromBody] float Valor)
         {
             try
             {
@@ -49,8 +54,25 @@ namespace Outsider.PagamentoAPI.Controllers
                 if (!string.IsNullOrEmpty(secret))
                     return Ok(secret);
 
+                var _client = new HttpClient();
+                string? token = await HttpContext.GetTokenAsync("access_token");
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var response = await _client.GetAsync($"/api/Carrinho/GetById/{carrinhoId}");
+                var content = await response.Content.ReadAsStringAsync();
+
+                var carrinho = JsonSerializer.Deserialize<List<ItemCarrinhoDTO>>(content,
+                    new JsonSerializerOptions
+                    { WriteIndented = true, PropertyNameCaseInsensitive = true });
+
+                if (carrinho == null || carrinho.Count == 0)
+                    return NotFound("Carrinho não encontrado");
+
+                if (Valor <= 20)
+                {
+                    Valor = carrinho.Sum(x => x.Produto.Preco);
+                }
                 var clientSecret = new ProcessoPagamento().CriarPagamento(Valor);
-                
+
                 await db.StringSetAsync($"Pagamento:{carrinhoId}", clientSecret);
                 return Ok(clientSecret);
             }

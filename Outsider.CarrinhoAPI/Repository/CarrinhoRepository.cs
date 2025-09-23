@@ -210,5 +210,22 @@ namespace Outsider.CarrinhoAPI.Repository
             }
 
         }
+
+        public async Task<IEnumerable<ItemCarrinhoDTO>> GetCarrinhoPorId(Guid id)
+        {
+            var itensCarrinhoDTO = new List<ItemCarrinhoDTO>();
+               
+            var cartItems = await con.ItensCarrinho.AsNoTracking().Where(x => x.CarrinhoId == id).Include(x=>x.Carrinho).Include(x=>x.Produto).ToListAsync();
+            if(cartItems == null || cartItems.Any() == false)
+                return itensCarrinhoDTO;
+
+            itensCarrinhoDTO = _mapper.Map<List<ItemCarrinhoDTO>>(cartItems);
+            itensCarrinhoDTO.ForEach((item) =>
+            {
+                item.Produto.ImagemBase64 = Encoding.UTF8.GetString(cartItems.Find(x => x.Id == item.Id)!.Produto!.Imagem!);
+            });
+
+            return itensCarrinhoDTO;
+        }
     }
 }

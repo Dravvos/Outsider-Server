@@ -20,6 +20,11 @@ namespace Outsider.CarrinhoAPI.Service
             await _carrinhoRepository.AdicionarItemAoCarrinho(usuarioId, produtoId, quantidade);
         }
 
+        public async Task<IEnumerable<ItemCarrinhoDTO>> GetCarrinhoPorId(Guid id)
+        {
+            return await _carrinhoRepository.GetCarrinhoPorId(id);
+        }
+
         public async Task<IEnumerable<ItemCarrinhoDTO>> GetCarrinhoPorUsuario(Guid usuarioId)
         {
             return await _carrinhoRepository.GetCarrinhoPorUsuario(usuarioId);

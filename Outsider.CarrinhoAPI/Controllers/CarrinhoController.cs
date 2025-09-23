@@ -47,6 +47,27 @@ namespace Outsider.CarrinhoAPI.Controllers
             }
         }
 
+        [HttpGet("[action]/{id}"), Authorize]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            try
+            {
+                var carrinho = await _carrinhoService.GetCarrinhoPorUsuario(id);
+                if (carrinho == null || carrinho.Any() == false)
+                    return NotFound();
+
+                return Ok(carrinho);
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                    return StatusCode(500, ex.InnerException.Message);
+
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+
         [HttpPost, Authorize]
         public async Task<IActionResult> AdicionarAoCarrinho([FromBody] CarrinhoItem item)
         {
